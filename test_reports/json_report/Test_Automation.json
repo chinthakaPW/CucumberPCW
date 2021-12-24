@@ -1,0 +1,2042 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 21016000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user has already logged in to application",
+            "match": {
+              "location": "Steps.AccountsPageSteps.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "dec2020secondbatch@gmail.com",
+                  "Selenium@12345"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-24T16:48:23.651Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 8560000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "account page title",
+        "description": "",
+        "id": "account-page-feature;account-page-title",
+        "after": [
+          {
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 168000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 21000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user is on account page",
+            "match": {
+              "location": "Steps.AccountsPageSteps.user_is_on_account_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user gets the title of the page",
+            "match": {
+              "location": "Steps.LoginSteps.user_gets_the_title_of_the_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "page title should be \"My account - My Store\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"My account - My Store\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.LoginSteps.page_title_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AccountPage"
+          },
+          {
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 23118000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user has already logged in to application",
+            "match": {
+              "location": "Steps.AccountsPageSteps.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "dec2020secondbatch@gmail.com",
+                  "Selenium@12345"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-24T16:48:23.604Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 8571000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "account section count",
+        "description": "",
+        "id": "account-page-feature;account-section-count",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 110000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user is on account page",
+            "match": {
+              "location": "Steps.AccountsPageSteps.user_is_on_account_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 229000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user gets accounts section",
+            "match": {
+              "location": "Steps.AccountsPageSteps.user_gets_accounts_section(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "ORDER HISTORY AND DETAILS"
+                ]
+              },
+              {
+                "cells": [
+                  "MY CREDIT SLIPS"
+                ]
+              },
+              {
+                "cells": [
+                  "MY ADDRESSES"
+                ]
+              },
+              {
+                "cells": [
+                  "MY PERSONAL INFORMATION"
+                ]
+              },
+              {
+                "cells": [
+                  "MY WISHLISTS"
+                ]
+              },
+              {
+                "cells": [
+                  "Home"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 41000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "accounts section count should be 6",
+            "match": {
+              "arguments": [
+                {
+                  "val": "6",
+                  "offset": 33
+                }
+              ],
+              "location": "Steps.AccountsPageSteps.accounts_section_count_should_be(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AccountPage"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Account page feature",
+    "description": "",
+    "id": "account-page-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/AccountsPage.feature",
+    "tags": [
+      {
+        "name": "@AccountPage",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-12-24T16:48:23.635Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 8573000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Contact us scenario with different set of data",
+        "description": "",
+        "id": "contact-us-feature;contact-us-scenario-with-different-set-of-data;;2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 109000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12944000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user navigates to contact us page",
+            "match": {
+              "location": "Steps.ContactUsSteps.user_navigates_to_contact_us_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 151000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user gets the title of the contact us page",
+            "match": {
+              "location": "Steps.ContactUsSteps.user_gets_the_title_of_the_contact_us_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9016000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user fills the form from given sheetname \"contactus\" and rownumber 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"contactus\"",
+                  "offset": 41
+                },
+                {
+                  "val": "0",
+                  "offset": 67
+                }
+              ],
+              "location": "Steps.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4312000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks on send button",
+            "match": {
+              "location": "Steps.ContactUsSteps.user_clicks_on_send_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 40000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "it shows a successful message \"Your message has been successfully sent to our team.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your message has been successfully sent to our team.\"",
+                  "offset": 30
+                }
+              ],
+              "location": "Steps.ContactUsSteps.it_shows_a_successful_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ContactUs"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Contact us feature",
+    "description": "",
+    "id": "contact-us-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/ContactUs.feature",
+    "tags": [
+      {
+        "name": "@ContactUs",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-12-24T16:48:23.604Z",
+        "before": [
+          {
+            "result": {
+              "duration": 20000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 8572000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Create new account with valid email address",
+        "description": "",
+        "id": "create-an-account;create-new-account-with-valid-email-address",
+        "after": [
+          {
+            "result": {
+              "duration": 27000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 711000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10505000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on login page",
+            "match": {
+              "location": "Steps.LoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1640000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters email address \"roymiller018@yopmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"roymiller018@yopmail.com\"",
+                  "offset": 26
+                }
+              ],
+              "location": "Steps.LoginSteps.userEntersEmailAddress(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1377000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click on create an account button",
+            "match": {
+              "location": "Steps.LoginSteps.userClickOnCreateAnAccountButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1860000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "register page title should be \"Create an account\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Create an account\"",
+                  "offset": 30
+                }
+              ],
+              "location": "Steps.CreateAnAccountSteps.registerPageTitleShouldBe(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Create an account",
+    "description": "",
+    "id": "create-an-account",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/CreateAnAccountPage.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-12-24T16:48:23.604Z",
+        "before": [
+          {
+            "result": {
+              "duration": 19000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 8574000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Login page title",
+        "description": "",
+        "id": "login-page-feature;login-page-title",
+        "after": [
+          {
+            "result": {
+              "duration": 19000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 210000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13385000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on login page",
+            "match": {
+              "location": "Steps.LoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 209000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user gets the title of the page",
+            "match": {
+              "location": "Steps.LoginSteps.user_gets_the_title_of_the_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "page title should be \"Login - My Store\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login - My Store\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.LoginSteps.page_title_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-24T16:48:23.501Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 8572000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Forgot password link",
+        "description": "",
+        "id": "login-page-feature;forgot-password-link",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 117000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13221000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user is on login page",
+            "match": {
+              "location": "Steps.LoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 761000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "forgot your password link should be displayed",
+            "match": {
+              "location": "Steps.LoginSteps.forgot_your_password_link_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-24T16:48:23.604Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 8572000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Login with correct credentials",
+        "description": "",
+        "id": "login-page-feature;login-with-correct-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 110000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12271000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user is on login page",
+            "match": {
+              "location": "Steps.LoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1633000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user enters username \"dec2020secondbatch@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"dec2020secondbatch@gmail.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.LoginSteps.user_enters_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 665000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user enters password \"Selenium@12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Selenium@12345\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.LoginSteps.user_enters_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8274000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "Steps.LoginSteps.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 29000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user gets the title of the page",
+            "match": {
+              "location": "Steps.LoginSteps.user_gets_the_title_of_the_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "page title should be \"My account - My Store\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"My account - My Store\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.LoginSteps.page_title_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-24T16:48:23.649Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 8564000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Login without username or password",
+        "description": "",
+        "id": "login-page-feature;login-without-username-or-password",
+        "after": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 406000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13759000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user is on login page",
+            "match": {
+              "location": "Steps.LoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4088000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "Steps.LoginSteps.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 782000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "it should display invalid message \"An email address required.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"An email address required.\"",
+                  "offset": 34
+                }
+              ],
+              "location": "Steps.LoginSteps.itShouldDisplayInvalidMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-24T16:48:23.646Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 8568000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Login without password",
+        "description": "",
+        "id": "login-page-feature;login-without-password",
+        "after": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 111000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8599000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user is on login page",
+            "match": {
+              "location": "Steps.LoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1409000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user enters username \"dec2020secondbatch@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"dec2020secondbatch@gmail.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.LoginSteps.user_enters_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3941000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "Steps.LoginSteps.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 383000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "it should display invalid message \"Password is required.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Password is required.\"",
+                  "offset": 34
+                }
+              ],
+              "location": "Steps.LoginSteps.itShouldDisplayInvalidMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-24T16:48:23.604Z",
+        "before": [
+          {
+            "result": {
+              "duration": 23000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 9340000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 38,
+        "name": "Login without username",
+        "description": "",
+        "id": "login-page-feature;login-without-username",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 118000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12627000000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "user is on login page",
+            "match": {
+              "location": "Steps.LoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1026000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "user enters password \"Selenium@12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Selenium@12345\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.LoginSteps.user_enters_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3708000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "Steps.LoginSteps.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 988000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "it should display invalid message \"An email address required.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"An email address required.\"",
+                  "offset": 34
+                }
+              ],
+              "location": "Steps.LoginSteps.itShouldDisplayInvalidMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-24T16:48:46.388Z",
+        "before": [
+          {
+            "result": {
+              "duration": 38000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 8021000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 45,
+        "name": "Login with invalid credentials",
+        "description": "",
+        "id": "login-page-feature;login-with-invalid-credentials",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 110000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7557000000,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "user is on login page",
+            "match": {
+              "location": "Steps.LoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 783000000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "user enters username \"dec2020sdbatch@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"dec2020sdbatch@gmail.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.LoginSteps.user_enters_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 532000000,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "user enters password \"Seleum@12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Seleum@12345\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.LoginSteps.user_enters_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3761000000,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "Steps.LoginSteps.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 400000000,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "it should display invalid message \"Authentication failed.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Authentication failed.\"",
+                  "offset": 34
+                }
+              ],
+              "location": "Steps.LoginSteps.itShouldDisplayInvalidMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-24T16:48:46.501Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 7960000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 53,
+        "name": "Login with invalid password",
+        "description": "",
+        "id": "login-page-feature;login-with-invalid-password",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 108000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7897000000,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "user is on login page",
+            "match": {
+              "location": "Steps.LoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 706000000,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "user enters username \"dec2020secondbatch@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"dec2020secondbatch@gmail.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.LoginSteps.user_enters_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 376000000,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "user enters password \"Selenium@12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Selenium@12\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.LoginSteps.user_enters_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4156000000,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "Steps.LoginSteps.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 70000000,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "it should display invalid message \"Authentication failed.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Authentication failed.\"",
+                  "offset": 34
+                }
+              ],
+              "location": "Steps.LoginSteps.itShouldDisplayInvalidMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-24T16:48:46.729Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 7759000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 61,
+        "name": "Login with invalid username",
+        "description": "",
+        "id": "login-page-feature;login-with-invalid-username",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 108000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7389000000,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "user is on login page",
+            "match": {
+              "location": "Steps.LoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 748000000,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "user enters username \"dec2020secoatch@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"dec2020secoatch@gmail.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.LoginSteps.user_enters_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 523000000,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "user enters password \"Selenium@12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Selenium@12345\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.LoginSteps.user_enters_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4192000000,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "Steps.LoginSteps.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 160000000,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "it should display invalid message \"Authentication failed.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Authentication failed.\"",
+                  "offset": 34
+                }
+              ],
+              "location": "Steps.LoginSteps.itShouldDisplayInvalidMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-24T16:48:48.730Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 5749000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 69,
+        "name": "Login with wrong username format",
+        "description": "",
+        "id": "login-page-feature;login-with-wrong-username-format",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 115000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8013000000,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "user is on login page",
+            "match": {
+              "location": "Steps.LoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 604000000,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "user enters username \"dec2020secoatch@gmailcom\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"dec2020secoatch@gmailcom\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.LoginSteps.user_enters_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1942000000,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "Steps.LoginSteps.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 235000000,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "it should display invalid message \"Invalid email address.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid email address.\"",
+                  "offset": 34
+                }
+              ],
+              "location": "Steps.LoginSteps.itShouldDisplayInvalidMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-24T16:48:51.409Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3556000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 76,
+        "name": "Create new account without email address",
+        "description": "",
+        "id": "login-page-feature;create-new-account-without-email-address",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 169000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7793000000,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "user is on login page",
+            "match": {
+              "location": "Steps.LoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 642000000,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "user click on create an account button",
+            "match": {
+              "location": "Steps.LoginSteps.userClickOnCreateAnAccountButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 736000000,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "it should display invalid email message \"Invalid email address.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid email address.\"",
+                  "offset": 40
+                }
+              ],
+              "location": "Steps.LoginSteps.itShouldDisplayInvalidEmailMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-24T16:48:51.500Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3475000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 82,
+        "name": "Create new account with wrong email address",
+        "description": "",
+        "id": "login-page-feature;create-new-account-with-wrong-email-address",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 123000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7688000000,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "user is on login page",
+            "match": {
+              "location": "Steps.LoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 630000000,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "user enters email address \"wrong.email\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"wrong.email\"",
+                  "offset": 26
+                }
+              ],
+              "location": "Steps.LoginSteps.userEntersEmailAddress(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 515000000,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "user click on create an account button",
+            "match": {
+              "location": "Steps.LoginSteps.userClickOnCreateAnAccountButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1273000000,
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "it should display invalid email message \"Invalid email address.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid email address.\"",
+                  "offset": 40
+                }
+              ],
+              "location": "Steps.LoginSteps.itShouldDisplayInvalidEmailMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Login page feature",
+    "description": "",
+    "id": "login-page-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/LoginPage.feature",
+    "tags": [
+      {
+        "name": "@Login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
