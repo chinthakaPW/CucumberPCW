@@ -1,3 +1,4 @@
+@CreateAccount
 Feature: Create an account
 
   @Smoke
