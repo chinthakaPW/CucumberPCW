@@ -3,6 +3,7 @@ package TestRunner;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
+import qa.util.DeleteReportFiles;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
@@ -16,4 +17,8 @@ import org.junit.runner.RunWith;
 )
 
 public class OneByOneRunner {
+
+    //HTML report screenshots clearing
+    //DeleteReportFiles deleteReportFiles = new DeleteReportFiles();
+        //deleteReportFiles.deleteAllFilesFromDirectory();
 }

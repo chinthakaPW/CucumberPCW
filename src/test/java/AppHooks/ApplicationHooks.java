@@ -8,9 +8,9 @@ import org.junit.Assume;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import qa.factory.DriverFactory;
 import qa.util.ConfigReader;
+import qa.util.DeleteReportFiles;
 
 import java.util.Properties;
 
@@ -19,7 +19,6 @@ public class ApplicationHooks {
     private WebDriver driver;
     private ConfigReader configReader;
     Properties prop;
-
 
     @Before(order = 0)
     public void getProperty() {
