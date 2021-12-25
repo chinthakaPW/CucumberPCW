@@ -12,7 +12,7 @@ Feature: Login page feature
     Given user is on login page
     Then forgot your password link should be displayed
 
-  @Regression
+  @Regression @skip_scenario
   Scenario: Login with correct credentials
     Given user is on login page
     When user enters username "dec2020secondbatch@gmail.com"
