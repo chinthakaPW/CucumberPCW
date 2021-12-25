@@ -111,9 +111,9 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven.surefire.version}</version>
                 <configuration>
-                    <!-- <includes>
+                    <includes>
                         <include>**/ParallelRunner.java</include>
-                    </includes> -->
+                    </includes>
                 </configuration>
             </plugin>
 
