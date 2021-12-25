@@ -3,6 +3,7 @@ package qa.factory;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import qa.util.ConfigReader;
@@ -10,7 +11,6 @@ import qa.util.ConfigReader;
 import java.util.Properties;
 
 public class DriverFactory {
-    public WebDriver driver;
     ConfigReader configReader = new ConfigReader();
     Properties readProps = configReader.init_prop();
     String bro;
