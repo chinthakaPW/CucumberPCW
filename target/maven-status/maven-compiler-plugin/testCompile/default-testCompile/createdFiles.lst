@@ -1,9 +1,0 @@
-TestRunner/OneByOneRunner.class
-TestRunner/RunFailedAsOneByOne.class
-Steps/CreateAnAccountSteps.class
-AppHooks/ApplicationHooks.class
-TestRunner/RunFailedAsParallel.class
-TestRunner/ParallelRunner.class
-Steps/AccountsPageSteps.class
-Steps/ContactUsSteps.class
-Steps/LoginSteps.class
