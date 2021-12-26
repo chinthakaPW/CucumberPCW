@@ -16,7 +16,7 @@ import qa.util.DeleteReportFiles;
         features = {"@target/rerun-scenarios/failed_scenarios_rerun.txt"}
 )
 
-public class RunFailedAsParallel extends AbstractTestNGCucumberTests {
+public class RunFailedScenariosAgain extends AbstractTestNGCucumberTests {
     @Override
     @DataProvider(parallel = true)
     public Object[][] scenarios() {

@@ -16,7 +16,7 @@ import qa.util.DeleteReportFiles;
         features = {"src/test/resources/Features/LoginPage.feature"}
 )
 
-public class ParallelRunner extends AbstractTestNGCucumberTests {
+public class TestRunner extends AbstractTestNGCucumberTests {
     @Override
     @DataProvider(parallel = true)
     public Object[][] scenarios() {
