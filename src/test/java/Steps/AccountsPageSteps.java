@@ -5,7 +5,7 @@ import Pages.LoginPage;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import org.junit.Assert;
+import org.testng.Assert;
 import qa.factory.DriverFactory;
 
 import java.util.List;

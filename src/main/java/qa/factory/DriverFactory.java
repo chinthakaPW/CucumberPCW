@@ -3,23 +3,15 @@ package qa.factory;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
-import qa.util.ConfigReader;
-
-import java.util.Properties;
 
 public class DriverFactory {
-    ConfigReader configReader = new ConfigReader();
-    Properties readProps = configReader.init_prop();
-    String bro;
-
     public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 
     //This method is used to initialize the ThreadLocal driver on the basis of given browser
     public WebDriver init_driver(String browser) {
-        bro = readProps.getProperty("systeminfo.browser");
+        String bro = System.getProperty("systeminfo.browser");
         System.out.println("Browser value is : " + bro);
 
         if (bro.equals("chrome")) {

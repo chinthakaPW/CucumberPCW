@@ -2,7 +2,7 @@ package Steps;
 
 import Pages.CreateAnAccountPage;
 import io.cucumber.java.en.Then;
-import org.junit.Assert;
+import org.testng.Assert;
 import qa.factory.DriverFactory;
 
 public class CreateAnAccountSteps {
