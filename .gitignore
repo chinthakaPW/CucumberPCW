@@ -4,3 +4,4 @@ target
 *.iml
 *.mvn
 test_reports
+*.DS_Store
