@@ -1,9 +1,0 @@
-target
-.gradle
-.idea
-*.iml
-*.mvn
-test_reports
-*.DS_Store
-.gitignore
-.gitattributes
