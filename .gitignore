@@ -5,5 +5,5 @@ target
 test_reports
 *.DS_Store
 .gitignore
-.gitattributes
 .idea
+.gitattributes
