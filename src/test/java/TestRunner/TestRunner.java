@@ -1,10 +1,13 @@
 package TestRunner;
 
+import io.cucumber.junit.Cucumber;
 import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
+import org.junit.runner.RunWith;
 import org.testng.annotations.DataProvider;
 import qa.util.DeleteReportFiles;
 
+@RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {"pretty",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
