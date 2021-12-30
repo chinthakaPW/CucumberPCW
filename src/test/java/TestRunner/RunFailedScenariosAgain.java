@@ -2,8 +2,13 @@ package TestRunner;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import qa.util.DeleteReportFiles;
+import qa.util.ZipUtils;
+
+import java.io.IOException;
 
 @CucumberOptions(
         plugin = {"pretty",
@@ -20,12 +25,22 @@ public class RunFailedScenariosAgain extends AbstractTestNGCucumberTests {
     @Override
     @DataProvider(parallel = true)
     public Object[][] scenarios() {
+        return super.scenarios();
+    }
 
-        //HTML report screenshots clearing
+    @BeforeClass
+    public void beforeTestStart() {
+        ZipUtils zipUtils = new ZipUtils();
+        zipUtils.zipDirectory("test_reports/zip");
+
         DeleteReportFiles deleteReportFiles = new DeleteReportFiles();
         deleteReportFiles.deleteAllFilesFromDirectory("test_reports/html_report");
         deleteReportFiles.deleteAllFilesFromDirectory("test_reports/zip");
+    }
 
-        return super.scenarios();
+    @AfterSuite
+    public void zippingTheFolder() throws IOException {
+        ZipUtils zipUtils = new ZipUtils();
+        zipUtils.zipTheFile("test_reports/html_report/", "test_reports/zip/HTML_Report.zip");
     }
 }
