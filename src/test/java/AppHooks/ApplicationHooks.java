@@ -10,14 +10,9 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import qa.factory.DriverFactory;
 
-import java.util.Properties;
-
-import static java.lang.Thread.sleep;
-
 public class ApplicationHooks {
     private DriverFactory driverFactory;
     private WebDriver driver;
-    Properties prop;
 
     @Before(value = "@skip_scenario", order = 0)
     public void skip_scenario(Scenario scenario) {
@@ -33,10 +28,7 @@ public class ApplicationHooks {
     }
 
     @After(order = 0)
-    public void quitBrowser() throws InterruptedException {
-
-        driver.close();
-        sleep(1000);
+    public void quitBrowser() {
         driver.quit();
     }
 
