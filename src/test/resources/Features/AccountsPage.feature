@@ -22,4 +22,4 @@ Feature: Account page feature
       | MY PERSONAL INFORMATION   |
       | MY WISHLISTS              |
       | Home                      |
-    And accounts section count should be 7
+    And accounts section count should be 6
