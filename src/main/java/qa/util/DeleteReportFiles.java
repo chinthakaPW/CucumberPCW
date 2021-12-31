@@ -3,7 +3,7 @@ package qa.util;
 import java.io.File;
 
 public class DeleteReportFiles {
-    public void deleteAllFilesFromDirectory(String delDirectory,String fileType) {
+    public void deleteAllFilesFromDirectory(String delDirectory, String fileType) {
         String directory = delDirectory;
 
         File folder = new File(directory);
