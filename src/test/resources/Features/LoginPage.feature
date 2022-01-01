@@ -1,4 +1,4 @@
-@CXBC-13 @Login
+@CXBC-18 @Login
 Feature: Login page feature
 
   @CXBC-1 @Smoke
