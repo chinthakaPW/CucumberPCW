@@ -47,7 +47,7 @@ Feature: Login page feature
     When user enters username "dec2020sdbatch@gmail.com"
     And user enters password "Seleum@12345"
     And user clicks on login button
-    Then it should display invalid message "Authentication failed."
+    Then it should display invalid message "Authentication failed.s"
 
   @CXBC-8 @Regression
   Scenario: Login with invalid password
