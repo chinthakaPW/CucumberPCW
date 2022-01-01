@@ -25,7 +25,7 @@ Feature: Login page feature
   Scenario: Login without username or password
     Given user is on login page
     And user clicks on login button
-    Then it should display invalid message "An email address required.s"
+    Then it should display invalid message "An email address required."
 
   @CXBC-5 @Regression
   Scenario: Login without password
@@ -47,7 +47,7 @@ Feature: Login page feature
     When user enters username "dec2020sdbatch@gmail.com"
     And user enters password "Seleum@12345"
     And user clicks on login button
-    Then it should display invalid message "Authentication failed.s"
+    Then it should display invalid message "Authentication failed."
 
   @CXBC-8 @Regression
   Scenario: Login with invalid password
