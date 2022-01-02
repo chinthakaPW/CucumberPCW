@@ -10,7 +10,7 @@ Feature: Account page feature
   Scenario: account page title
     Given user is on account page
     When user gets the title of the page
-    Then page title should be "My account - My Store"
+    Then page title should be "My account - My Stores"
 
   @Regression
   Scenario: account section count
