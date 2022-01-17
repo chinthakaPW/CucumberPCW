@@ -14,15 +14,15 @@ import java.net.URL;
 
 public class DriverFactory {
 
-    public static String USERNAME = "chinthakawithana_3LOKRD";
-    public static String ACCESSKEY = "q6Gi6MoZjtsKsXMQzEoc";
-    public static String URL = "https://"+USERNAME+":"+ACCESSKEY+"@hub.browserstack.com/wd/hub";
 
+    public void setURL(String uName, String aKey) {
+        String URL = "https://" + uName + ":" + aKey + "@hub.browserstack.com/wd/hub";
+    }
 
     public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 
     //This method is used to initialize the ThreadLocal driver on the basis of given browser
-    public WebDriver init_driver(String browser) throws MalformedURLException {
+    public WebDriver init_driver(String browser, String bStackURL) throws MalformedURLException {
         String bro = browser;
         System.out.println("Browser value is : " + bro);
 
@@ -36,16 +36,14 @@ public class DriverFactory {
             WebDriverManager.safaridriver().setup();
             tlDriver.set(new SafariDriver());
         } else if (bro.equals("browserstack")) {
-
             DesiredCapabilities caps = new DesiredCapabilities();
             caps.setCapability("os", "Windows");
-            caps.setCapability("os_version", "11");
-            caps.setCapability("browser", "Edge");
-            caps.setCapability("browser_version", "latest");
-
-            URL bsURL = new URL(URL);
-            tlDriver.set(new RemoteWebDriver(bsURL,caps));
-        }else {
+            caps.setCapability("os_version", "XP");
+            caps.setCapability("browser", "Chrome");
+            caps.setCapability("browser_version", "49.0");
+            URL bsURL = new URL(bStackURL);
+            tlDriver.set(new RemoteWebDriver(bsURL, caps));
+        } else {
             System.out.println("Please pass the correct browser value : " + bro);
         }
         getDriver().manage().deleteAllCookies();
