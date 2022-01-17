@@ -37,10 +37,12 @@ public class DriverFactory {
             tlDriver.set(new SafariDriver());
         } else if (bro.equals("browserstack")) {
             DesiredCapabilities caps = new DesiredCapabilities();
-            caps.setCapability("os", "Windows");
-            caps.setCapability("os_version", "XP");
+            caps.setCapability("os", "OS X");
+            caps.setCapability("os_version", "Monterey");
             caps.setCapability("browser", "Chrome");
-            caps.setCapability("browser_version", "49.0");
+            caps.setCapability("browser_version", "latest");
+            caps.setCapability("browserstack.local", "false");
+
             URL bsURL = new URL(bStackURL);
             tlDriver.set(new RemoteWebDriver(bsURL, caps));
         } else {
