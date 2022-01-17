@@ -16,7 +16,7 @@ import java.io.IOException;
                 "rerun:target/rerun-scenarios/failed_scenarios_rerun.txt"},
         monochrome = false,
         glue = {"Steps", "AppHooks"},
-        features = {"src/test/resources/Features/LoginPage.feature"}
+        features = {"src/test/resources/Features/AccountsPage.feature"}
 )
 
 public class TestRunner extends AbstractTestNGCucumberTests {
@@ -33,6 +33,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 
         DeleteReportFiles deleteReportFiles = new DeleteReportFiles();
         deleteReportFiles.deleteAllFilesFromDirectory("test_reports/html_report", ".html");
+        deleteReportFiles.deleteAllFilesFromDirectory("test_reports/html_report", ".png");
         deleteReportFiles.deleteAllFilesFromDirectory("test_reports/zip", ".zip");
     }
 

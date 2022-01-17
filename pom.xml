@@ -20,7 +20,6 @@
         <webdrivermanager.version>5.0.2</webdrivermanager.version>
         <maven.compiler.version>3.8.1</maven.compiler.version>
         <maven.surefire.version>3.0.0-M5</maven.surefire.version>
-        <jvm.options>-Dsysteminfo.browser="chrome"</jvm.options>
     </properties>
 
     <dependencies>
@@ -102,7 +101,6 @@
                     <includes>
                         <include>**/TestRunner.java</include>
                     </includes>
-                    <argLine>${jvm.options}</argLine>
                 </configuration>
             </plugin>
         </plugins>

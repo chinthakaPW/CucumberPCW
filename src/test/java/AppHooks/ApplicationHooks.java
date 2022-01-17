@@ -9,10 +9,17 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import qa.factory.DriverFactory;
+import qa.util.ConfigReader;
+
+import java.net.MalformedURLException;
+import java.util.Properties;
 
 public class ApplicationHooks {
     private DriverFactory driverFactory;
     private WebDriver driver;
+
+    private ConfigReader configReader;
+    Properties prop;
 
     @Before(value = "@skip_scenario", order = 0)
     public void skip_scenario(Scenario scenario) {
@@ -21,8 +28,14 @@ public class ApplicationHooks {
     }
 
     @Before(order = 1)
-    public void launchBrowser() {
-        String browserName = System.getProperty("systeminfo.browser");
+    public void getProperty() {
+        configReader = new ConfigReader();
+        prop = configReader.init_prop();
+    }
+
+    @Before(order = 2)
+    public void launchBrowser() throws MalformedURLException {
+        String browserName = prop.getProperty("browser");
         driverFactory = new DriverFactory();
         driver = driverFactory.init_driver(browserName);
     }
