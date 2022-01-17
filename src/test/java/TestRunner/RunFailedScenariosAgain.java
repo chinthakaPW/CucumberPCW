@@ -35,6 +35,7 @@ public class RunFailedScenariosAgain extends AbstractTestNGCucumberTests {
 
         DeleteReportFiles deleteReportFiles = new DeleteReportFiles();
         deleteReportFiles.deleteAllFilesFromDirectory("test_reports/html_report", ".html");
+        deleteReportFiles.deleteAllFilesFromDirectory("test_reports/html_report", ".png");
         deleteReportFiles.deleteAllFilesFromDirectory("test_reports/zip", ".zip");
     }
 
