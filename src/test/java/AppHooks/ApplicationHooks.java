@@ -57,10 +57,10 @@ public class ApplicationHooks {
         }
     }
 
-    @DataProvider(name="browserStackTestData")
-    public Object[][] getData(){
+    @DataProvider(name = "browserStackTestData")
+    public Object[][] getData() {
         Object[][] testData = new Object[][]{
-                {Platform.MAC,"chrome","62.0"}
+                {Platform.MAC, "chrome", "62.0"}
         };
         return testData;
     }

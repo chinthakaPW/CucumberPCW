@@ -8,7 +8,7 @@ import java.util.zip.ZipOutputStream;
 
 public class ZipUtils {
 
-    public void zipDirectory(String outputDir){
+    public void zipDirectory(String outputDir) {
         File pathAsFile = new File(outputDir);
 
         if (!Files.exists(Paths.get(outputDir))) {
