@@ -10,7 +10,6 @@ import java.util.concurrent.TimeUnit;
 public class LoginPage {
     private WebDriver driver;
     private WebDriverWait wait;
-    private String logToAccPageTitle;
 
     //1. By Locators:
     private By emailId = By.id("email");
