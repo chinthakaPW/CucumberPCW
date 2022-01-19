@@ -1,18 +1,18 @@
 @CXBC-18 @Login
 Feature: Login page feature
 
-  @CXBC-1 @Smoke
+  @CXBC-1 @Regression
   Scenario: Login page title
     Given user is on login page
     When user gets the title of the page
     Then page title should be "Login - My Store"
 
-  @CXBC-2 @Smoke
+  @CXBC-2 @Regression
   Scenario: Forgot password link
     Given user is on login page
     Then forgot your password link should be displayed
 
-  @CXBC-3 @Regression
+  @CXBC-3 @Smoke
   Scenario: Login with correct credentials
     Given user is on login page
     When user enters username "dec2020secondbatch@gmail.com"
@@ -72,13 +72,13 @@ Feature: Login page feature
     And user clicks on login button
     Then it should display invalid message "Invalid email address."
 
-  @CXBC-11 @Smoke
+  @CXBC-11 @Regression
   Scenario: Create new account without email address
     Given user is on login page
     And user click on create an account button
     Then it should display invalid email message "Invalid email address."
 
-  @CXBC-12 @Smoke
+  @CXBC-12 @Regression
   Scenario: Create new account with wrong email address
     Given user is on login page
     When user enters email address "wrong.email"
