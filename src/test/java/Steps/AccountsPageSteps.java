@@ -14,6 +14,7 @@ import java.util.Map;
 public class AccountsPageSteps {
     LoginPage loginPage = new LoginPage(DriverFactory.getDriver());
     AccountsPage accountsPage;
+    String accPTitle;
 
     @Given("user has already logged in to application")
     public void user_has_already_logged_in_to_application(DataTable credTable) {
@@ -28,6 +29,14 @@ public class AccountsPageSteps {
     @Given("user is on account page")
     public void user_is_on_account_page() {
         accountsPage.getAccountsPageTitle();
+    }
+
+    @Then("page title should be in the account page {string}")
+    public void pageTitleShouldBeInTheAccountPage(String accPageTitle) {
+        accPTitle = accountsPage.getAccountsPageTitle();
+        System.out.println("Expected account page title : " + accPageTitle);
+        System.out.println("Actual account page title : " + accPTitle);
+        Assert.assertTrue(accPTitle.contains(accPageTitle));
     }
 
     @Then("user gets accounts section")

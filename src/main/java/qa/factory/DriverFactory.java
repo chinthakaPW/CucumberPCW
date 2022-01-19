@@ -13,12 +13,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class DriverFactory {
-
-
-    public void setURL(String uName, String aKey) {
-        String URL = "https://" + uName + ":" + aKey + "@hub.browserstack.com/wd/hub";
-    }
-
     public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 
     //This method is used to initialize the ThreadLocal driver on the basis of given browser
@@ -39,9 +33,10 @@ public class DriverFactory {
             DesiredCapabilities caps = new DesiredCapabilities();
             caps.setCapability("os", "OS X");
             caps.setCapability("os_version", "Monterey");
-            caps.setCapability("browser", "Chrome");
-            caps.setCapability("browser_version", "latest");
+            caps.setCapability("browser", "Safari");
+            caps.setCapability("browser_version", "15.1");
             caps.setCapability("browserstack.local", "false");
+
 
             URL bsURL = new URL(bStackURL);
             tlDriver.set(new RemoteWebDriver(bsURL, caps));
@@ -49,7 +44,7 @@ public class DriverFactory {
             System.out.println("Please pass the correct browser value : " + bro);
         }
         getDriver().manage().deleteAllCookies();
-        getDriver().manage().window().maximize();
+        //getDriver().manage().window().maximize();
         return getDriver();
     }
 
