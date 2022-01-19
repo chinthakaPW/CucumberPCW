@@ -11,6 +11,7 @@ import org.openqa.selenium.safari.SafariDriver;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 public class DriverFactory {
     public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();

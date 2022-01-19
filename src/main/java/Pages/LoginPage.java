@@ -5,8 +5,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.concurrent.TimeUnit;
+
 public class LoginPage {
     private WebDriver driver;
+    private WebDriverWait wait;
+    private String logToAccPageTitle;
 
     //1. By Locators:
     private By emailId = By.id("email");
@@ -26,6 +30,8 @@ public class LoginPage {
 
     //3. Page Actions: features(behavior) of the page the form of methods:
     public String getLoginPageTitle() {
+        wait = new WebDriverWait(driver, 15);
+        wait.until(ExpectedConditions.titleContains("My account - My Store"));
         return driver.getTitle();
     }
 
@@ -54,7 +60,7 @@ public class LoginPage {
     }
 
     public String getEmailRequiredMessage() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOfElementLocated(invalidEmail));
         return driver.findElement(invalidEmail).getText();
     }
