@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class AccountsPage {
     private WebDriver driver;
@@ -18,8 +19,6 @@ public class AccountsPage {
     //2. Constructor of the page class:
     public AccountsPage(WebDriver driver) {
         this.driver = driver;
-        WebDriverWait wait = new WebDriverWait(driver,30);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"block_top_menu\"]/ul/li[1]/a")));
     }
 
     //3. Page Actions: features(behavior) of the page the form of methods:
