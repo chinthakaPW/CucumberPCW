@@ -12,9 +12,11 @@ import java.util.concurrent.TimeUnit;
 
 public class AccountsPage {
     private WebDriver driver;
+    private WebDriverWait wait;
 
     //1. By Locators:
     private By accountSections = By.cssSelector("div#center_column span");
+    private By grabAccountSection = By.xpath("//*[@id=\"center_column\"]/div");
 
     //2. Constructor of the page class:
     public AccountsPage(WebDriver driver) {
@@ -27,13 +29,17 @@ public class AccountsPage {
     }
 
     public String getAccountsPageTitle() {
+        wait = new WebDriverWait(driver, 100);
+        wait.until(ExpectedConditions.titleContains("My account - My Store"));
         return driver.getTitle();
     }
 
     public List<String> getAccountsSectionList() {
         List<String> accountList = new ArrayList<>();
+        wait = new WebDriverWait(driver, 100);
+        wait.until(ExpectedConditions.titleContains("My account - My Store"));
         List<WebElement> accountsHeaderList = driver.findElements(accountSections);
-
+//.visibilityOfElementLocated(grabAccountSection)
         for (WebElement e : accountsHeaderList) {
             String text = e.getText();
             System.out.println(text);
