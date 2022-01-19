@@ -30,7 +30,7 @@ public class LoginPage {
 
     //3. Page Actions: features(behavior) of the page the form of methods:
     public String getLoginPageTitle() {
-        wait = new WebDriverWait(driver, 15);
+        wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.titleContains("My account - My Store"));
         return driver.getTitle();
     }
